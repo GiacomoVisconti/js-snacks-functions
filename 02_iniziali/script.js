@@ -6,7 +6,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui.
 
 /**
- * This functions returs the fist letter of a word inside an array
+ * This functions returs the fist letter of a word, from an array, inside another array
  * @param {array} name_list 
  * @returns {string} letter
  */
