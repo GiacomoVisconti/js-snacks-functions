@@ -11,15 +11,15 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
  * @returns {string} word
  */
 function only_with_this_initial(name_list, filter){
-    let first_letters_filtered = []
+    let word_filtered = []
 
     for(i = 0; i < name_list.length; i++){
         const letter = name_list[i].charAt(0)
         if(letter === filter){
-            first_letters_filtered.push(name_list[i])
+            word_filtered.push(name_list[i])
         }
     }
-    return first_letters_filtered
+    return word_filtered
 }
 
 
@@ -29,3 +29,15 @@ console.log(only_with_this_initial(names, "A"));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+const only_this_word = (name_list, filter) => {
+    let word_filtered = []
+
+    for(i = 0; i < name_list.length; i++){
+        const letter = name_list[i].charAt(0)
+        if(letter === filter){
+            word_filtered.push(name_list[i])
+        }
+    }
+    return word_filtered
+}
+console.log(only_this_word(names, "A"));
