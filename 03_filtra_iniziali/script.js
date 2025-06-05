@@ -13,7 +13,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 function only_with_this_initial(name_list, filter){
     let word_filtered = []
 
-    for(i = 0; i < name_list.length; i++){
+    for(let i = 0; i < name_list.length; i++){
         const letter = name_list[i].charAt(0)
         if(letter === filter){
             word_filtered.push(name_list[i])

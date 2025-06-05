@@ -13,7 +13,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 function initials(name_list){
     let first_letters = []
 
-    for(i = 0; i < name_list.length; i++){
+    for(let i = 0; i < name_list.length; i++){
         const element = name_list[i]
         //avrei anche potuto fare direttamente
         /*
